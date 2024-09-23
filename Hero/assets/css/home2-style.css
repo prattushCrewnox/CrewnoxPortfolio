@@ -421,7 +421,9 @@ p {
   font-size: 90px;
   font-weight: 600;
   text-transform: uppercase; }
-
+  .main-color {
+    color: var(--main-color); }
+  
 .work-hed .caption .path span {
   margin: 0 10px; }
 
