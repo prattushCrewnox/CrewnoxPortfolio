@@ -1,0 +1,57 @@
+/* --------------- Works --------------- */
+
+:root {
+    --bg-color: #212121;
+    --theme-color: #151515;
+}
+
+$bg-color: var(--bg-color);
+$sub-color: var(--sub-color);
+$theme-color: var(--theme-color);
+$body-color: var(--font-color);
+$heading-color: var(--heading-color);
+$p-color: var(--p-color);
+$border-color: var(--border-color);
+$mobile-xs-screen: 480px;
+$tablet-sm-screen: 768px;
+$desk-md-screen: 992px;
+$desk-lg-screen: 1300px;
+.work-card{
+
+    .card-item{
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, .05);
+        border-radius: 10px;
+        background: $bg-color;
+
+        .cont{
+            height: 100%;
+            padding: 40px 80px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .tag{
+                font-size: 12px;
+                line-height: 1;
+                padding: 7px 12px;
+                margin-right: 2px;
+                border: 1px solid rgba(255,255,255,.1);
+                border-radius: 30px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .img{
+            padding: 20px;
+
+            img{
+                border-radius: 15px;
+            }
+        }
+    }
+}
