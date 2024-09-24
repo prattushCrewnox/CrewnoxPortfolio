@@ -353,6 +353,9 @@
   position: relative;
   z-index: 3;
 }
+.services-cst #cst-view {
+  border-color: #adb5bd;
+}
 .services-cst #cst-view:hover {
   background: #d0ff71;
   color: #0e0f11;
@@ -576,6 +579,75 @@
   color: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .sec-head .sub-head {
+    margin-bottom: 15px !important;
+  }
+  .sec-head .text-indent {
+    text-indent: 0;
+  }
+  .sec-head .d-flex {
+    display: block !important;
+  }
+  .sec-head .ml-auto {
+    margin: 15px 0 0 !important;
+  }
+  .services-cst .item .title h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .services-cst .item .title .list {
+    display: none;
+  }
+  .services-cst .item .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .services-cst .item .icon img {
+    width: 25px;
+  }
+  .work-hed2 .fit-img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    letter-spacing: -1px;
+  }
+  h2 {
+    letter-spacing: -1px;
+  }
+  h3 {
+    font-size: 32px;
+    letter-spacing: normal;
+  }
+  h4 {
+    font-size: 28px;
+    letter-spacing: normal;
+  }
+  .serv-hed2 .caption h1,
+  .work-hed2 h1 {
+    font-size: 40px !important;
+  }
+  .serv-hed2 .caption .list ul,
+  .work-hed2 .list ul {
+    padding: 0;
+  }
+  .work-hed .caption h1 {
+    font-size: 45px;
+  }
+  .work-card .card-item .img {
+    height: 500px;
+  }
+  .work-card .card-item h5 {
+    font-size: 35px;
+  }
+  .blog-hed .caption h1 {
+    font-size: 35px;
+    text-indent: 0;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;

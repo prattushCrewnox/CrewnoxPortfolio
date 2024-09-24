@@ -5,6 +5,9 @@
     color: black;
     position: relative;
     z-index: 3;
+    #cst-view{
+        border-color: #adb5bd;
+    }
     #cst-view:hover{
         background: #d0ff71;
         color: #0e0f11;
@@ -301,4 +304,106 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 992px) {
+
+    .sec-head{
+
+        .sub-head{
+            margin-bottom: 15px !important;
+        }
+
+        .text-indent{
+            text-indent: 0;
+        }
+
+        .d-flex{
+            display: block !important;
+        }
+
+        .ml-auto{
+            margin: 15px 0 0 !important;
+        }
+    }
+    .services-cst .item .title {
+
+        h2{
+            font-size: 30px;
+            letter-spacing: -1px;
+        }
+
+        .list{
+            display: none;
+        }
+    }
+
+    .services-cst .item .icon{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+
+        img{
+            width: 25px;
+        }
+    }
+
+    .work-hed2 .fit-img{
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    h1{
+        letter-spacing: -1px;
+    }
+    
+    h2{
+        letter-spacing: -1px;
+    }
+    
+    h3{
+        font-size: 32px;
+        letter-spacing: normal;
+    }
+    
+    h4{
+        font-size: 28px;
+        letter-spacing: normal;
+    }
+
+    .serv-hed2 .caption,
+    .work-hed2{
+
+        h1{
+            font-size: 40px !important;
+        }
+
+        .list{
+            
+            ul{
+                padding: 0;
+            }
+        }
+    }
+
+    .work-hed .caption h1{
+        font-size: 45px;
+    }
+
+    .work-card .card-item .img{
+        height: 500px;
+    }
+
+    .work-card .card-item h5{
+        font-size: 35px;
+    }
+
+    .blog-hed .caption h1{
+        font-size: 35px;
+        text-indent: 0;
+    }
+
 }
