@@ -57,6 +57,11 @@
   margin-right: 15px;
 }
 
+.section-padding-half {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* --------------- header --------------- */
 .header-ds {
   background-image: url(../imgs/header-bg.png);
@@ -353,6 +358,9 @@
   position: relative;
   z-index: 3;
 }
+.services-cst #cst-view {
+  border-color: #adb5bd;
+}
 .services-cst #cst-view:hover {
   background: #d0ff71;
   color: #0e0f11;
@@ -560,22 +568,120 @@
 .footer-sa .contact-info .social-icon a:hover {
   border-color: #fff;
 }
-.footer-sa .sub-footer .copy p {
-  font-size: 14px;
-}
-.footer-sa .sub-footer .copy p a {
-  color: #fff;
-}
-.footer-sa .sub-footer .links {
-  width: 100%;
-}
-.footer-sa .sub-footer .links a {
-  font-size: 14px;
-}
-.footer-sa .sub-footer .links .active {
-  color: #fff;
+
+.sub-head {
+  font-size: 20px;
+  line-height: 28px;
 }
 
+.sub-color {
+  color: #808080;
+}
+
+p {
+  color: #494949;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.sec-head h2 {
+  font-size: 65px;
+  line-height: 65px;
+  letter-spacing: -2px;
+  font-weight: 400;
+}
+.sec-head h2 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 992px) {
+  .sec-head .ml-auto {
+    margin: 30px 0 0 0 !important;
+  }
+  .sec-head .sub-head {
+    margin-top: 10px;
+    margin-bottom: 15px !important;
+  }
+  .sec-head .text-indent {
+    text-indent: 0;
+  }
+  .sec-head .d-flex {
+    display: block !important;
+  }
+  .sec-head .ml-auto {
+    margin: 15px 0 0 !important;
+  }
+  .services-cst .item .title h2 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .services-cst .item .title .list {
+    display: none;
+  }
+  .services-cst .item .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .services-cst .item .icon img {
+    width: 25px;
+  }
+  .work-hed2 .fit-img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-color {
+    margin-top: 10px;
+  }
+  .sec-head h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  h1 {
+    letter-spacing: -1px;
+  }
+  h2 {
+    letter-spacing: -1px;
+  }
+  h3 {
+    font-size: 32px;
+    letter-spacing: normal;
+  }
+  h4 {
+    font-size: 28px;
+    letter-spacing: normal;
+  }
+  .serv-hed2 .caption h1,
+  .work-hed2 h1 {
+    font-size: 40px !important;
+  }
+  .serv-hed2 .caption .list ul,
+  .work-hed2 .list ul {
+    padding: 0;
+  }
+  .services-mp .serv-title .tab-title h2 {
+    font-size: 65px;
+    line-height: 1.2;
+  }
+  .work-hed .caption h1 {
+    font-size: 45px;
+  }
+  .work-card .card-item .img {
+    height: 500px;
+  }
+  .work-card .card-item h5 {
+    font-size: 35px;
+  }
+  .blog-hed .caption h1 {
+    font-size: 35px;
+    text-indent: 0;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
