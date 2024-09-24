@@ -57,6 +57,11 @@
   margin-right: 15px;
 }
 
+.section-padding-half {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 /* --------------- header --------------- */
 .header-ds {
   background-image: url(../imgs/header-bg.png);
@@ -563,24 +568,41 @@
 .footer-sa .contact-info .social-icon a:hover {
   border-color: #fff;
 }
-.footer-sa .sub-footer .copy p {
-  font-size: 14px;
+
+.sub-head {
+  font-size: 20px;
+  line-height: 28px;
 }
-.footer-sa .sub-footer .copy p a {
-  color: #fff;
+
+.sub-color {
+  color: #808080;
 }
-.footer-sa .sub-footer .links {
-  width: 100%;
+
+p {
+  color: #494949;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
-.footer-sa .sub-footer .links a {
-  font-size: 14px;
+
+.sec-head h2 {
+  font-size: 65px;
+  line-height: 65px;
+  letter-spacing: -2px;
+  font-weight: 400;
 }
-.footer-sa .sub-footer .links .active {
-  color: #fff;
+.sec-head h2 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 992px) {
+  .sec-head .ml-auto {
+    margin: 30px 0 0 0 !important;
+  }
   .sec-head .sub-head {
+    margin-top: 10px;
     margin-bottom: 15px !important;
   }
   .sec-head .text-indent {
@@ -612,6 +634,14 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .sub-color {
+    margin-top: 10px;
+  }
+  .sec-head h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    font-weight: 400;
+  }
   h1 {
     letter-spacing: -1px;
   }
@@ -633,6 +663,10 @@
   .serv-hed2 .caption .list ul,
   .work-hed2 .list ul {
     padding: 0;
+  }
+  .services-mp .serv-title .tab-title h2 {
+    font-size: 65px;
+    line-height: 1.2;
   }
   .work-hed .caption h1 {
     font-size: 45px;

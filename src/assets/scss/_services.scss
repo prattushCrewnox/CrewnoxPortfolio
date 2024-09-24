@@ -278,39 +278,51 @@
             }
         }
     }
+}
 
-    .sub-footer{
+//our services 
 
-        .copy{
+.sub-head{
+    font-size: 20px;
+    line-height: 28px;
+}
 
-            p{
-                font-size: 14px;
-                
-                a{
-                    color: #fff;
-                }
-            }
-        }
+.sub-color{
+    color: #808080;
+}
 
-        .links{
-            width: 100%;
+p{
+    color: #494949;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
 
-            a{
-                font-size: 14px;
-            }
+.sec-head{
 
-            .active{
-                color: #fff;
-            }
+    h2{
+        font-size: 65px;
+        line-height: 65px;
+        letter-spacing: -2px;
+  font-weight: 400;
+        span{
+            font-family: "Playfair Display", serif;
+            font-style: italic;
+            font-weight: 400;
         }
     }
 }
 
 @media screen and (max-width: 992px) {
-
+    .sec-head{
+        .ml-auto{
+            margin: 30px 0 0 0 !important;
+        }
+    }
     .sec-head{
 
         .sub-head{
+            margin-top: 10px;
             margin-bottom: 15px !important;
         }
 
@@ -355,7 +367,14 @@
 }
 
 @media screen and (max-width: 768px) {
-
+    .sub-color{
+        margin-top: 10px;
+    }
+    .sec-head h2{
+        font-size: 45px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
     h1{
         letter-spacing: -1px;
     }
@@ -387,6 +406,10 @@
                 padding: 0;
             }
         }
+    }
+    .services-mp .serv-title .tab-title h2{
+        font-size: 65px;
+        line-height: 1.2;
     }
 
     .work-hed .caption h1{

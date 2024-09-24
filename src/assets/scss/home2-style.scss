@@ -25,6 +25,7 @@ $desk-lg-screen: 1300px;
 // menu
 
 @import 'menu';
+@import 'global';
 
 // header
 @import 'header';
@@ -210,6 +211,7 @@ p{
         }
     }
 }
+
 
 
 /* ====================== [ Start Responsive ] ====================== */
