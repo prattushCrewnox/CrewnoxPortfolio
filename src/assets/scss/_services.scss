@@ -1,131 +1,15 @@
 
-/* --------------- Services pg --------------- */
-
-.serv-hed{
-
-    .caption{
-      position: relative;
-
-        h1{
-
-            span{
-                letter-spacing: normal;
-            }
-        }
-    }
-  
-    .main-marq{
-      padding: 30px 0;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  
-      .item{
-        padding: 0 50px !important;
-      }
-  
-      h2{
-  
-        span{
-          font-size: 10vw;
-          font-weight: 700;
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-      }
-    }
-  
-    .fit-img{
-      height: 540px;
-    }
-}
-
-.serv-hed2{
-
-    .caption{
-      position: relative;
-
-        h1{
-
-            span{
-                letter-spacing: normal;
-            }
-        }
-  
-    }
-
-    .list{
-
-        li{
-            position: relative;
-            padding-left: 30px;
-            margin-top: 15px;
-
-            &:before{
-                content: '';
-                width: 7px;
-                height: 7px;
-                border-radius: 50%;
-                background: #fff;
-                position: absolute;
-                left: 0;
-                top: 30%;
-            }
-        }
-    }
-  
-    .fit-img{
-      height: 540px;
-    }
-}
-
-.intro-cst{
-
-    .states{
-
-        .item{
-            position: relative;
-            padding-left: 60px;
-    
-            &:before{
-                content: '';
-                position: absolute;
-                top: 10px;
-                left: 0;
-                width: 40px;
-                border-bottom: 1px solid rgba(255,255,255,.1);
-            }
-    
-            &:after{
-                content: '';
-                position: absolute;
-                top: 10px;
-                left: 0;
-                bottom: 0;
-                border-left: 1px solid rgba(255,255,255,.1);
-            }
-    
-            span{
-                font-size: 16px;
-                color: #aaa;
-            }
-    
-            h2{
-                font-size: 100px;
-                line-height: 1;
-                margin-top: 40px;
-            }
-    
-            .spn-botm{
-                margin-left: 10px;
-            }
-        }
-    }
-}
 
 .services-cst{
+    // background-color: black;
+    color: black;
     position: relative;
     z-index: 3;
-
+    #cst-view:hover{
+        background: #d0ff71;
+        color: #0e0f11;
+        border-color:  #adb5bd;
+    }
     .sub-head{
 
         &:after{
@@ -176,11 +60,11 @@
                 
                 span{
                     padding: 7px 12px;
-                    background: $main-color;
+                    background: #d0ff71;
                     border-radius: 30px;
                     position: absolute;
                     font-size: 14px;
-                    color: $theme-color;
+                    color: #0e0f11;
                     opacity: 0;
                     transition: all .4s;
 
@@ -236,7 +120,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 50%;
-                background: $main-color;
+                background: #d0ff71;
                 overflow: hidden;
                 opacity: 0;
 
@@ -288,10 +172,10 @@
         border-radius: 0;
 
         &.active{
-            border-color: $main-color;
+            border-color: #d0ff71;
 
             button{
-                color: $main-color !important;
+                color: #d0ff71 !important;
             }
         }
 
@@ -343,7 +227,7 @@
                 width: 210px;
                 height: 210px;
                 border-radius: 50%;
-                background: $main-color;
+                background: #d0ff71;
                 position: absolute;
                 top: -80px;
                 right: 8%;
