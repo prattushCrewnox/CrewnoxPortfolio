@@ -59,7 +59,6 @@
 
 .section-padding-half {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 /* --------------- header --------------- */
@@ -353,6 +352,11 @@
   border-radius: 15px;
 }
 
+@media screen and (max-width: 632) {
+  .img {
+    margin: 0;
+  }
+}
 .services-cst {
   color: black;
   position: relative;
@@ -672,7 +676,10 @@ p {
     font-size: 45px;
   }
   .work-card .card-item .img {
-    height: 500px;
+    height: 250px;
+  }
+  .work-card .card-item .laptop-view-img {
+    padding: 0;
   }
   .work-card .card-item h5 {
     font-size: 35px;
