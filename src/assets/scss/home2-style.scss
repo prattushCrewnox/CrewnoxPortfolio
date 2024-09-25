@@ -33,6 +33,7 @@ $desk-lg-screen: 1300px;
 @import 'works';
 @import 'workCard';
 @import 'services';
+@import 'about';
 
 
 
@@ -308,7 +309,15 @@ p{
             }
         }
     }
+    .about-hed,
+    .serv-hed{
 
+        h1{
+            font-size: 30px;
+            letter-spacing: normal;
+            line-height: 1;
+        }
+    }
     .intro-ds{
 
         .comit{

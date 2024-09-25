@@ -675,9 +675,6 @@ p {
   .work-hed .caption h1 {
     font-size: 45px;
   }
-  .work-card .card-item .img {
-    height: 250px;
-  }
   .work-card .card-item .laptop-view-img {
     padding: 0;
   }
@@ -689,6 +686,115 @@ p {
     text-indent: 0;
   }
 }
+@media screen and (min-width: 320px) and (max-width: 390px) {
+  .work-card .card-item .img {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 460px) {
+  .work-card .card-item .img {
+    height: 295px;
+  }
+}
+@media screen and (min-width: 460px) and (max-width: 575px) {
+  .work-card .card-item .img {
+    height: 382px;
+  }
+}
+/* --------------- about pg --------------- */
+.about-hed {
+  background-color: #18191b;
+}
+.about-hed .caption {
+  position: relative;
+}
+.about-hed .caption h1 span {
+  letter-spacing: normal;
+}
+.about-hed .main-marq {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.about-hed .main-marq .item {
+  padding: 0 50px !important;
+}
+.about-hed .main-marq h2 span {
+  font-size: 10vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.about-hed .fit-img {
+  height: 540px;
+}
+
+.services-dm {
+  position: relative;
+  z-index: 3;
+}
+.services-dm .img-patern {
+  position: absolute;
+  bottom: 10%;
+  left: -15%;
+  width: 30%;
+  filter: invert(1);
+  opacity: 0.07;
+  z-index: -1;
+}
+.services-dm .item {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.services-dm .item:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.services-dm .item .title h2 {
+  font-size: 100px;
+  letter-spacing: -4px;
+}
+.services-dm .item p {
+  opacity: 0;
+  transition: all 0.4s;
+}
+.services-dm .item .icon {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-left: 150px;
+}
+.services-dm .item .icon img {
+  width: 30px;
+}
+.services-dm .item:hover .title {
+  margin-bottom: 0;
+  color: #d0ff71;
+}
+.services-dm .item:hover p {
+  opacity: 1;
+}
+
+.sec-head .sub-head {
+  position: relative;
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.sec-head .sub-head:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -884,6 +990,12 @@ p {
   }
   .header-ds .numb span br {
     display: none;
+  }
+  .about-hed h1,
+  .serv-hed h1 {
+    font-size: 30px;
+    letter-spacing: normal;
+    line-height: 1;
   }
   .intro-ds .comit .item {
     text-align: center;
