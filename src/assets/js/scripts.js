@@ -72,8 +72,19 @@ $(function () {
 
 
 });
+// services Design : developed Picture Change
+$('.services-mp .serv-title .tab-title').on('mouseenter', function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.services-mp .serv-title .tab-title').removeClass('current');
+    $(this).addClass('current');
 
-// Work Card
+    $('.services-mp .content .item').removeClass('current');
+    $("#" + tab_id).addClass('current');
+
+    if ($(this).hasClass('current')) {
+        return false;
+    }
+});
 
 $(function () {
     var width = $(window).width();
@@ -114,4 +125,11 @@ $(function () {
         });
 
     }
+});
+$(window).on("load", function () {
+
+    $('.gallery').isotope({
+        itemSelector: '.items'
+    });
+
 });

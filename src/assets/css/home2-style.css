@@ -4,11 +4,6 @@
   --main-color: #0047FF;
 }
 
-.test {
-  height: 300vh;
-  background-color: red;
-}
-
 /* --------------- Menu --------------- */
 .navbar {
   position: absolute;
@@ -59,6 +54,10 @@
 
 .section-padding-half {
   padding-top: 60px;
+}
+
+.pdding {
+  padding: 0 15px 0 15px;
 }
 
 /* --------------- header --------------- */
@@ -527,52 +526,6 @@
   font-size: 14px;
 }
 
-.footer-sa .call-action h2 {
-  font-size: 100px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1;
-  position: relative;
-}
-.footer-sa .call-action h2 .buton {
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  background: #d0ff71;
-  position: absolute;
-  top: -80px;
-  right: 8%;
-  font-size: 32px;
-  color: #212121;
-}
-.footer-sa .call-action h2 .buton img {
-  width: 30px;
-}
-.footer-sa .logo {
-  width: 160px;
-}
-.footer-sa .contact-info .item {
-  margin-bottom: 50px;
-}
-.footer-sa .contact-info .item span {
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-.footer-sa .contact-info .social-icon a {
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 14px;
-  transition: all 0.4s;
-}
-.footer-sa .contact-info .social-icon a:hover {
-  border-color: #fff;
-}
-
 .sub-head {
   font-size: 20px;
   line-height: 28px;
@@ -667,10 +620,6 @@ p {
   .serv-hed2 .caption .list ul,
   .work-hed2 .list ul {
     padding: 0;
-  }
-  .services-mp .serv-title .tab-title h2 {
-    font-size: 65px;
-    line-height: 1.2;
   }
   .work-hed .caption h1 {
     font-size: 45px;
@@ -795,6 +744,137 @@ p {
   left: 0;
 }
 
+/* --------------- About --------------- */
+.about-ma {
+  display: flex;
+}
+.about-ma .bg-img {
+  height: 100vh;
+  width: 50vw;
+}
+.about-ma .content {
+  padding: 60px 60px 0;
+  width: 50vw;
+}
+.about-ma .content .item {
+  margin-top: 200px;
+}
+.about-ma .content .item .botm h2 {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0.1;
+}
+.about-ma .content .item .botm h2 span {
+  font-size: 80px;
+}
+.about-ma .content .item .botm h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+.services-mp {
+  color: black;
+  position: relative;
+  z-index: 3;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+.services-mp .serv-title .tab-title {
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.services-mp .serv-title .tab-title h2 {
+  font-size: 120px;
+  line-height: 120px;
+  margin: 10px 0;
+}
+.services-mp .serv-title .tab-title.current {
+  opacity: 1;
+}
+.services-mp .content {
+  position: relative;
+}
+.services-mp .content .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.services-mp .content .item:first-of-type {
+  position: static;
+}
+.services-mp .content .item.current {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+.services-mp .content .item .cont {
+  margin-top: 30px;
+}
+.services-mp .content .item .cont span {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.layers {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  right: 30px;
+  bottom: -10px;
+  background: #fff;
+  border-radius: 15px;
+  opacity: 0.7;
+  z-index: -1;
+}
+.layers:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  right: 20px;
+  bottom: -10px;
+  background: #fff;
+  border-radius: 15px;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  .services-mp .content .item {
+    padding: 0 15px;
+  }
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services-mp .serv-title .tab-title h2 {
+    font-size: 65px;
+    line-height: 1.2;
+  }
+  .img {
+    width: auto;
+    height: auto;
+    background: var(--theme-color);
+  }
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;

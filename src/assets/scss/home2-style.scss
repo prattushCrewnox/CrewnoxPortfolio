@@ -17,11 +17,6 @@ $tablet-sm-screen: 768px;
 $desk-md-screen: 992px;
 $desk-lg-screen: 1300px;
 
-.test{
-    height: 300vh;
-    background-color: red
-}
-
 // menu
 
 @import 'menu';
@@ -34,6 +29,8 @@ $desk-lg-screen: 1300px;
 @import 'workCard';
 @import 'services';
 @import 'about';
+@import 'testimonial';
+@import 'servicesBanner';
 
 
 
