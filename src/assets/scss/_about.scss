@@ -117,14 +117,36 @@
   }
 }
 
-/* --------------- About --------------- */
+/* --------------- About Testimonial --------------- */
 
 .about-ma {
+  background-color: #181818;
+  background-image: url(../imgs/bg-main.jpg);
+  background-size: cover;
   display: flex;
-
+  padding-top: 40px;
   .bg-img {
     height: 100vh;
     width: 50vw;
+  }
+  .sec-head {
+    .sub-head {
+      position: relative;
+      padding-left: 25px;
+      font-size: 20px;
+      font-weight: 500;
+
+      &:after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        left: 0;
+      }
+    }
   }
 
   .content {
@@ -141,7 +163,7 @@
           line-height: 1;
           opacity: 0.1;
 
-          span {
+          strong {
             font-size: 80px;
           }
         }
@@ -153,6 +175,78 @@
           letter-spacing: 1px;
           text-transform: uppercase;
           padding-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 992px) {
+  .about-ma .sec-head .sub-head {
+    margin-left: 15px;
+  }
+  // .about-ma .sec-head .d-flex {
+  //   display: flex;
+  // }
+  .about-ma {
+    display: block !important;
+  }
+  .about-ma .content {
+    width: 100%;
+    padding: 0 15px !important;
+
+    .item {
+      margin-top: 140px;
+    }
+    .item {
+      .percent-botm {
+        padding-bottom: 20px;
+        .fix-percent {
+          font-size: 100px;
+          font-weight: 600;
+          line-height: 1;
+          opacity: 0.1;
+
+          strong {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec-head {
+    h3 {
+      font-size: 28px;
+      line-height: 1.4;
+      letter-spacing: -1px;
+    }
+  }
+    .about-ma .content {
+    width: 100%;
+    padding: 0 15px !important;
+
+    .item {
+      margin-top: 140px;
+    }
+    .item {
+      .percent-botm {
+        gap: 70px;
+        padding-bottom: 15px;
+        .fix-percent {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 82px;
+          font-weight: 600;
+          line-height: 1;
+          opacity: 0.1;
+
+          strong {
+            font-size: 65px;
+          }
         }
       }
     }

@@ -565,7 +565,7 @@ p {
   .sec-head .text-indent {
     text-indent: 0;
   }
-  .sec-head .d-flex {
+  .sec-head .services-cst .d-flex {
     display: block !important;
   }
   .sec-head .ml-auto {
@@ -744,13 +744,33 @@ p {
   left: 0;
 }
 
-/* --------------- About --------------- */
+/* --------------- About Testimonial --------------- */
 .about-ma {
+  background-color: #181818;
+  background-image: url(../imgs/bg-main.jpg);
+  background-size: cover;
   display: flex;
+  padding-top: 40px;
 }
 .about-ma .bg-img {
   height: 100vh;
   width: 50vw;
+}
+.about-ma .sec-head .sub-head {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-ma .sec-head .sub-head:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 0;
 }
 .about-ma .content {
   padding: 60px 60px 0;
@@ -765,7 +785,7 @@ p {
   line-height: 1;
   opacity: 0.1;
 }
-.about-ma .content .item .botm h2 span {
+.about-ma .content .item .botm h2 strong {
   font-size: 80px;
 }
 .about-ma .content .item .botm h6 {
@@ -777,6 +797,63 @@ p {
   padding-bottom: 15px;
 }
 
+@media screen and (min-width: 760px) and (max-width: 992px) {
+  .about-ma .sec-head .sub-head {
+    margin-left: 15px;
+  }
+  .about-ma {
+    display: block !important;
+  }
+  .about-ma .content {
+    width: 100%;
+    padding: 0 15px !important;
+  }
+  .about-ma .content .item {
+    margin-top: 140px;
+  }
+  .about-ma .content .item .percent-botm {
+    padding-bottom: 20px;
+  }
+  .about-ma .content .item .percent-botm .fix-percent {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0.1;
+  }
+  .about-ma .content .item .percent-botm .fix-percent strong {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sec-head h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
+  .about-ma .content {
+    width: 100%;
+    padding: 0 15px !important;
+  }
+  .about-ma .content .item {
+    margin-top: 140px;
+  }
+  .about-ma .content .item .percent-botm {
+    gap: 70px;
+    padding-bottom: 15px;
+  }
+  .about-ma .content .item .percent-botm .fix-percent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 0.1;
+  }
+  .about-ma .content .item .percent-botm .fix-percent strong {
+    font-size: 65px;
+  }
+}
 .services-mp {
   color: black;
   position: relative;
@@ -865,16 +942,82 @@ p {
     font-size: 65px;
     line-height: 1.2;
   }
-  .img {
-    width: auto;
-    height: auto;
-    background: var(--theme-color);
-  }
   .section-padding {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
+/* --------------- Services --------------- */
+.services-sa {
+  background-color: #151515;
+  background-image: url(../imgs/bg-main.jpg);
+  background-size: cover;
+}
+.services-sa .sub-head {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.services-sa .item {
+  background: #212121;
+  padding: 15px;
+  border-radius: 20px;
+}
+.services-sa .item .cont {
+  padding: 15px;
+}
+.services-sa .item .cont .icon {
+  width: 52px;
+  height: 52px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.services-sa .item .cont .icon img {
+  width: 25px;
+}
+.services-sa .item .cont .icon.invert img {
+  filter: invert(1);
+}
+.services-sa .item .cont .text {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.services-sa .item .cont .text p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #fff;
+}
+
+.marq-sa {
+  overflow: hidden !important;
+}
+.marq-sa .item {
+  padding: 0 80px !important;
+  position: relative;
+}
+.marq-sa .item:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.marq-sa .item h2 {
+  white-space: nowrap;
+  font-size: 96px;
+  line-height: 120px;
+  letter-spacing: -4px;
+  background: linear-gradient(to right, #fff, transparent);
+  -webkit-text-fill-color: transparent;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
