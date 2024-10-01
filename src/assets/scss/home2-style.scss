@@ -33,6 +33,7 @@ $desk-lg-screen: 1300px;
 @import 'servicesBanner';
 @import 'servicesCard';
 @import 'clients';
+@import 'footer';
 
 
 
@@ -261,6 +262,13 @@ p{
             }
         }
     }
+    .footer-sa .call-action h2{
+        font-size: 70px;
+
+        .buton{
+            display: none !important;
+        }
+    }
 }
 
 @media screen and (max-width: $tablet-sm-screen) {
@@ -392,6 +400,10 @@ p{
 
     .pricing-ds .content .price-head .price-headItem h2{
         font-size: 24px;
+    }
+    .footer-sa .call-action h2{
+        font-size: 35px;
+        line-height: 1.4;
     }
 }
 

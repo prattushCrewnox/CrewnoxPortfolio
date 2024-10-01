@@ -1180,6 +1180,70 @@ p {
     font-weight: 450;
   }
 }
+.footer-sa {
+  background-color: #18191b;
+}
+.footer-sa .call-action h2 {
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1;
+  position: relative;
+}
+.footer-sa .call-action h2 .buton {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background: #d0ff71;
+  position: absolute;
+  top: -80px;
+  right: 8%;
+  font-size: 32px;
+  color: #212121;
+}
+.footer-sa .call-action h2 .buton img {
+  width: 30px;
+}
+.footer-sa .logo {
+  width: 160px;
+}
+.footer-sa .contact-info .item {
+  margin-bottom: 50px;
+}
+.footer-sa .contact-info .item span {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer-sa .contact-info .social-icon a {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.4s;
+}
+.footer-sa .contact-info .social-icon a:hover {
+  border-color: #fff;
+}
+.footer-sa .sub-footer .copy p {
+  font-size: 14px;
+}
+.footer-sa .sub-footer .copy p a {
+  color: #fff;
+}
+.footer-sa .sub-footer .links {
+  width: 100%;
+}
+.footer-sa .sub-footer .links a {
+  font-size: 14px;
+}
+.footer-sa .sub-footer .links .active {
+  color: #fff;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
@@ -1346,6 +1410,12 @@ p {
     display: block !important;
     width: 100% !important;
   }
+  .footer-sa .call-action h2 {
+    font-size: 70px;
+  }
+  .footer-sa .call-action h2 .buton {
+    display: none !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .sec-head {
@@ -1433,5 +1503,9 @@ p {
   }
   .pricing-ds .content .price-head .price-headItem h2 {
     font-size: 24px;
+  }
+  .footer-sa .call-action h2 {
+    font-size: 35px;
+    line-height: 1.4;
   }
 }/*# sourceMappingURL=home2-style.css.map */
