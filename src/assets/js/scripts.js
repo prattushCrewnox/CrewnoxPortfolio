@@ -26,6 +26,20 @@ $(function () {
             clickable: true,
         },
     });
+    
+    var testim = new Swiper(".testimonials-mp .testim-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        speed: 1500,
+        autoplay: {
+            delay: 5000,
+        },
+        loop: false,
+        pagination: {
+            el: ".testimonials-mp .swiper-pagination",
+            clickable: true,
+        },
+    });
 
     var workswip = new Swiper(".works-ds .work-swiper", {
         slidesPerView: "auto",

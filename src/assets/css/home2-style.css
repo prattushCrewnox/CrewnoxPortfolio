@@ -854,6 +854,110 @@ p {
     font-size: 65px;
   }
 }
+/* --------------- Testimonials --------------- */
+.testimonials-mp {
+  color: #000;
+  position: relative;
+  overflow: hidden !important;
+}
+.testimonials-mp .brush {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+.testimonials-mp .sec-head .gl-rate {
+  margin: 40px auto 0;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+.testimonials-mp .sec-head .gl-rate .icon {
+  width: 35px;
+}
+.testimonials-mp .sec-head .gl-rate .cont {
+  padding-left: 30px;
+  text-align: left;
+}
+.testimonials-mp .sec-head .gl-rate .cont h6 {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 18px;
+}
+.testimonials-mp .sec-head .gl-rate .cont .stars {
+  font-size: 13px;
+  color: #ef2b10;
+  margin-left: 10px;
+}
+.testimonials-mp .sec-head .gl-rate .cont p {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.testimonials-mp .testim-swiper {
+  position: relative;
+  overflow: visible;
+  padding: 150px 0 250px;
+  background-image: url(../imgs/testim/global.png);
+  background-size: 60%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.testimonials-mp .swiper-slide {
+  margin-right: -50px;
+  width: 400px;
+  height: auto;
+}
+.testimonials-mp .item {
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+.testimonials-mp .item .info p {
+  font-size: 14px;
+  color: #494949;
+}
+.testimonials-mp .item .info span {
+  font-size: 16px;
+}
+.testimonials-mp .item .info .img-author {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonials-mp .item:hover {
+  z-index: 5;
+}
+.testimonials-mp .gray {
+  background: #eeeeee;
+  transform: rotate(-7deg);
+}
+.testimonials-mp .colorful {
+  background: #85ee00;
+  transform: rotate(2deg) translateY(80px);
+  z-index: 3;
+}
+.testimonials-mp .darklen {
+  background: #151515;
+  color: #fff;
+  transform: rotate(2deg) translateY(-50px);
+}
+.testimonials-mp .darklen p {
+  color: #d1d1d1;
+}
+.testimonials-mp .lighten {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: rotate(-7deg);
+  z-index: 3;
+}
+
 .services-mp {
   color: black;
   position: relative;
@@ -1018,6 +1122,64 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+/* --------------- Clients --------------- */
+.brands-mp {
+  color: #000000;
+}
+.brands-mp .item {
+  position: relative;
+  display: inline-block;
+  padding: 0 60px;
+  margin-top: 60px;
+}
+.brands-mp .item:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--main-color);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: rotate(30deg);
+}
+.brands-mp .item.nodot:after {
+  display: none;
+}
+.brands-mp .item:hover .icon {
+  opacity: 1;
+  visibility: visible;
+}
+.brands-mp .item h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 64px;
+}
+.brands-mp .item .icon {
+  width: 200px;
+  position: absolute;
+  top: -60px;
+  right: -40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .brands-mp .item:after {
+    display: none;
+  }
+  .brands-mp .item h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 992px) {
+  .brands-mp .item h2 {
+    font-weight: 450;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
