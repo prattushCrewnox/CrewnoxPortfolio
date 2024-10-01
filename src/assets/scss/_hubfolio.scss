@@ -1,8 +1,9 @@
 /* --------------- header --------------- */
-
 .header-crv {
+  width: 100%;
   color: black;
   padding-top: 220px;
+  padding-bottom: 40px;
   background-image: url(../imgs/header/back.png);
   background-size: cover;
   background-position: center;
@@ -62,5 +63,15 @@
         }
       }
     }
+  }
+}
+@media  screen and (max-width : 1022px) {
+  .header-crv{
+    padding-bottom: 10px;
+  }
+}
+@media  screen and (max-width : 992px) {
+  .header-crv{
+    padding-bottom: 15px;
   }
 }
