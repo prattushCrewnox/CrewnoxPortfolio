@@ -74,6 +74,9 @@
   z-index: -1;
 }
 
+.header-ds {
+  margin-top: 30px;
+}
 .header-ds .container {
   display: flex;
   flex-direction: column;
@@ -82,14 +85,21 @@
   min-height: 800px;
 }
 .header-ds .caption h1 {
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 80px;
+  line-height: 80px;
   font-weight: 600;
 }
 .header-ds .caption h1 span {
-  font-family: "Playfair Display", serif;
-  font-style: italic;
+  font-size: 72px;
+  font-family: "kodchasan", serif;
   font-weight: 400;
+  line-height: 72px;
+}
+.header-ds .caption h1 span strong {
+  color: #007fff;
+}
+.header-ds .social-icon {
+  margin-top: 30px;
 }
 .header-ds .social-icon a {
   width: 48px;
@@ -107,32 +117,23 @@
   color: #fff;
   background: transparent;
 }
-.header-ds .numb {
-  padding-top: 50px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.header-ds .numb > div {
-  width: -moz-min-content;
-  width: min-content;
-}
-.header-ds .numb h2 {
-  font-size: 96px;
-  line-height: 96px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-.header-ds .numb span {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
 
 .bodyHeight {
   height: 100vh;
   background-color: red;
 }
 
+@media screen and (min-width: 1150px) {
+  .header-ds .caption h1 span {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 952px) {
+  .social-div {
+    display: flex;
+    justify-content: center;
+  }
+}
 :root {
   --theme-color: #fff;
 }
@@ -1512,13 +1513,6 @@ p {
   .header-ds .caption {
     text-align: center;
   }
-  .header-ds .text {
-    text-align: center;
-  }
-  .header-ds .text p {
-    width: 80%;
-    margin: auto;
-  }
   .services-ds .item .title h2 {
     font-size: 80px;
     line-height: 1.2;
@@ -1554,23 +1548,12 @@ p {
   .sec-head .butn {
     margin-top: 15px;
   }
-  .header-ds .caption h1,
-  .header-ds .numb h2 {
+  .header-ds .caption h1 {
     font-size: 60px;
     line-height: 1.2;
   }
-  .header-ds .numb {
-    display: block !important;
-  }
-  .header-ds .numb > div {
-    display: block;
-    width: 100%;
-  }
-  .header-ds .numb .ml-auto {
-    margin: 30px 0 0 0 !important;
-  }
-  .header-ds .numb span br {
-    display: none;
+  .header-ds .caption h1 span {
+    font-size: 50px;
   }
   .about-hed h1,
   .serv-hed h1 {

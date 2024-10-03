@@ -210,14 +210,6 @@ p {
       text-align: center;
     }
 
-    .text {
-      text-align: center;
-
-      p {
-        width: 80%;
-        margin: auto;
-      }
-    }
   }
 
   .services-ds .item .title h2 {
@@ -274,30 +266,14 @@ p {
     }
   }
 
-  .header-ds .caption h1,
-  .header-ds .numb h2 {
+  .header-ds .caption h1 {
     font-size: 60px;
     line-height: 1.2;
-  }
-
-  .header-ds .numb {
-    display: block !important;
-
-    > div {
-      display: block;
-      width: 100%;
-    }
-
-    .ml-auto {
-      margin: 30px 0 0 0 !important;
-    }
-
-    span {
-      br {
-        display: none;
-      }
+    span{
+      font-size: 50px;
     }
   }
+   
   .about-hed,
   .serv-hed {
     h1 {
