@@ -135,7 +135,7 @@
   }
 }
 :root {
-  --theme-color: #fff;
+  --theme-color: 121212;
 }
 
 .marq-mp .main-marq {
@@ -175,16 +175,6 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 832px) {
-  .marquee {
-    margin: 40px 0px;
-  }
-}
-@media screen and (min-width: 832px) {
-  .marquee {
-    margin: 60px 0px;
-  }
-}
 /* --------------- Works and Project Card --------------- */
 .main-color {
   color: #d0ff71;
