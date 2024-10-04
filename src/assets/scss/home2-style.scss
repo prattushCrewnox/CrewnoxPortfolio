@@ -32,7 +32,7 @@ $desk-lg-screen: 1300px;
 @import "servicesBanner";
 @import "servicesCard";
 @import "clients";
-@import 'contact';
+@import "contact";
 @import "hubfolio";
 @import "footer";
 
@@ -201,7 +201,17 @@ p {
     }
   }
 }
-
+//our services
+.our-services {
+  background: rgb(2, 43, 112);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 43, 112, 1) 0%,
+    rgba(29, 20, 42, 1) 100%
+  );
+  color: white;
+  padding-bottom: 30px;
+}
 /* ====================== [ Start Responsive ] ====================== */
 
 @media screen and (max-width: $desk-md-screen) {
@@ -209,7 +219,6 @@ p {
     .caption {
       text-align: center;
     }
-
   }
 
   .services-ds .item .title h2 {
@@ -269,11 +278,11 @@ p {
   .header-ds .caption h1 {
     font-size: 60px;
     line-height: 1.2;
-    span{
+    span {
       font-size: 50px;
     }
   }
-   
+
   .about-hed,
   .serv-hed {
     h1 {

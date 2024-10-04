@@ -137,6 +137,9 @@
   --theme-color: 121212;
 }
 
+.marq-mp {
+  margin-top: 30px;
+}
 .marq-mp .main-marq {
   overflow: hidden;
   padding: 25px 0;
@@ -241,7 +244,6 @@
 .works-mp .item .cont span {
   font-size: 14px;
   font-weight: 300;
-  text-transform: uppercase;
 }
 .works-mp .item .cont a {
   padding: 5px 25px;
@@ -377,6 +379,8 @@
   }
 }
 .services-cst {
+  background: linear-gradient(90deg, rgb(2, 43, 112) 0%, rgb(29, 20, 42) 100%);
+  padding-bottom: 80px;
   color: black;
   position: relative;
   z-index: 3;
@@ -767,7 +771,6 @@ p {
 /* --------------- About Testimonial --------------- */
 .about-ma {
   background-color: #181818;
-  background-image: url(../imgs/bg-main.jpg);
   background-size: cover;
   display: flex;
   padding-top: 40px;
@@ -1146,6 +1149,13 @@ p {
 .brands-mp {
   color: #000000;
 }
+.brands-mp .sec-head .sub-head {
+  position: relative;
+  padding-left: 25px;
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+}
 .brands-mp .item {
   position: relative;
   display: inline-block;
@@ -1156,7 +1166,7 @@ p {
   content: "";
   width: 10px;
   height: 10px;
-  background: #7FE85A;
+  background: #7fe85a;
   border-radius: 2px;
   position: absolute;
   top: 50%;
@@ -1202,7 +1212,7 @@ p {
 }
 /* --------------- Contact --------------- */
 .contact-us {
-  background-color: #212121;
+  background-color: #18191B;
   padding: 60px 0;
 }
 .contact-us .contact-sa .box {
@@ -1325,7 +1335,7 @@ p {
   width: 210px;
   height: 210px;
   border-radius: 50%;
-  background: #d0ff71;
+  background: #c497fe;
   position: absolute;
   top: -80px;
   right: 8%;
@@ -1358,6 +1368,10 @@ p {
 }
 .footer-sa .contact-info .social-icon a:hover {
   border-color: #fff;
+}
+.footer-sa .sub-footer {
+  background: rgb(2, 43, 112);
+  background: linear-gradient(90deg, rgb(2, 43, 112) 0%, rgb(29, 20, 42) 100%);
 }
 .footer-sa .sub-footer .copy p {
   font-size: 14px;
@@ -1518,6 +1532,13 @@ p {
   border-radius: 15px;
   opacity: 0.7;
   z-index: -1;
+}
+
+.our-services {
+  background: rgb(2, 43, 112);
+  background: linear-gradient(90deg, rgb(2, 43, 112) 0%, rgb(29, 20, 42) 100%);
+  color: white;
+  padding-bottom: 30px;
 }
 
 /* ====================== [ Start Responsive ] ====================== */

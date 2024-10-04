@@ -1,7 +1,5 @@
-
-
 .footer-sa {
-    background-color: #18191b;
+  background-color: #18191b;
   .call-action {
     h2 {
       font-size: 100px;
@@ -14,7 +12,7 @@
         width: 210px;
         height: 210px;
         border-radius: 50%;
-        background: #d0ff71;
+        background: #c497fe;
         position: absolute;
         top: -80px;
         right: 8%;
@@ -62,6 +60,13 @@
   }
 
   .sub-footer {
+    background: rgb(2, 43, 112);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 43, 112, 1) 0%,
+      rgba(29, 20, 42, 1) 100%
+    );
+  
     .copy {
       p {
         font-size: 14px;
