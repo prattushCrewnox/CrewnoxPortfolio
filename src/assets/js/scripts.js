@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
     const videoElement = document.querySelector(".bg-video");
-    const scrollThreshold =
-      window.innerWidth < 768 ? 700 : window.innerWidth < 992 ? 800 : 1200;
+    // const scrollThreshold =
+    //   window.innerWidth < 768 ? 700 : window.innerWidth < 992 ? 800 : 1200;
 
-    if (window.scrollY > scrollThreshold) {
+    if (window.scrollY > 1500) {
       videoElement.style.display = "none";
     } else {
       videoElement.style.display = "block";
