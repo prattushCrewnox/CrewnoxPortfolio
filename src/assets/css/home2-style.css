@@ -70,7 +70,6 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
   z-index: -1;
 }
 
@@ -338,7 +337,7 @@
 }
 /* --------------- Works --------------- */
 .work-card {
-  background: black;
+  background-color: #151515;
 }
 .work-card .card-item {
   margin-bottom: 30px;
