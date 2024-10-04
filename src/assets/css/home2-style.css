@@ -143,13 +143,14 @@
   padding: 25px 0;
 }
 .marq-mp .color-bg {
-  background: #85ee00;
+  background: #1040b7;
   transform: rotate(2deg);
   position: relative;
   z-index: 4;
 }
 .marq-mp .gray-bg {
-  background: #EEEEEE;
+  background: #c497fe;
+  color: #000000;
   transform: rotate(-4deg);
   margin-top: -30px;
 }
@@ -161,7 +162,7 @@
   content: "";
   width: 12px;
   height: 12px;
-  background: #000;
+  background: #ffffff;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -169,6 +170,28 @@
   transform: translateY(-50%);
 }
 .marq-mp .item h5 {
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marq-mp .marquee2 .item {
+  padding: 0 60px !important;
+  position: relative;
+}
+.marq-mp .marquee2 .item:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.marq-mp .marquee2 .item h5 {
   color: #000;
   font-weight: 400;
   text-transform: uppercase;
