@@ -10,6 +10,16 @@
   top: 0;
   z-index: -1;
 }
+@media screen and (max-width : 786px) {
+  #background-video{
+    object-position: center center;
+  }
+}
+// @media screen and (max-width : 991px) {
+//   #background-video{
+//     object-position: center center;
+//   }
+// }
 .header-ds {
     margin-top: 30px;
   // background-image: url(../imgs/header-bg.png);
@@ -69,16 +79,17 @@
   height: 100vh;
   background-color: red;
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 990px) {
   .header-ds .caption h1 {
     span {
       width: 800px;
     }
   }
 }
-@media screen and (max-width: 952px) {
-    .social-div{
-        display: flex;
-        justify-content: center;
-    }
-  }
+
+// @media screen and (max-width: 952px) {
+//     .social-div{
+//         display: flex;
+//         justify-content: center;
+//     }
+//   }

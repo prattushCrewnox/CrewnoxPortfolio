@@ -12,7 +12,7 @@ $heading-color: var(--heading-color);
 $p-color: var(--p-color);
 $border-color: var(--border-color);
 $mobile-xs-screen: 480px;
-$tablet-sm-screen: 768px;
+$tablet-sm-screen: 767px;
 $desk-md-screen: 992px;
 $desk-lg-screen: 1300px;
 
@@ -215,11 +215,11 @@ p {
 /* ====================== [ Start Responsive ] ====================== */
 
 @media screen and (max-width: $desk-md-screen) {
-  .header-ds {
-    .caption {
-      text-align: center;
-    }
-  }
+  // .header-ds {
+  //   .caption {
+  //     text-align: center;
+  //   }
+  // }
 
   .services-ds .item .title h2 {
     font-size: 80px;

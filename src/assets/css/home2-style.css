@@ -73,6 +73,12 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 786px) {
+  #background-video {
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
 .header-ds {
   margin-top: 30px;
 }
@@ -122,15 +128,9 @@
   background-color: red;
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 990px) {
   .header-ds .caption h1 span {
     width: 800px;
-  }
-}
-@media screen and (max-width: 952px) {
-  .social-div {
-    display: flex;
-    justify-content: center;
   }
 }
 :root {
@@ -1064,7 +1064,7 @@ p {
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .services-mp .serv-title .tab-title h2 {
     font-size: 65px;
     line-height: 1.2;
@@ -1543,9 +1543,6 @@ p {
 
 /* ====================== [ Start Responsive ] ====================== */
 @media screen and (max-width: 992px) {
-  .header-ds .caption {
-    text-align: center;
-  }
   .services-ds .item .title h2 {
     font-size: 80px;
     line-height: 1.2;
@@ -1570,7 +1567,7 @@ p {
     display: none !important;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sec-head {
     display: block !important;
   }
