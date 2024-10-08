@@ -174,7 +174,7 @@
 .marq-mp .item h5 {
   color: #ffffff;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform:capitalize;
   white-space: nowrap;
 }
 
@@ -196,7 +196,7 @@
 .marq-mp .marquee2 .item h5 {
   color: #000;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform:capitalize;
   white-space: nowrap;
 }
 
@@ -958,11 +958,12 @@ p {
   z-index: 5;
 }
 .testimonials-mp .gray {
-  background: #eeeeee;
+  background:#007fff;
+  color: white;
   transform: rotate(-7deg);
 }
 .testimonials-mp .colorful {
-  background: #85ee00;
+  background: #c497fe;
   transform: rotate(2deg) translateY(80px);
   z-index: 3;
 }
@@ -1166,7 +1167,7 @@ p {
   content: "";
   width: 10px;
   height: 10px;
-  background: #7fe85a;
+  background:#4b0082;
   border-radius: 2px;
   position: absolute;
   top: 50%;
