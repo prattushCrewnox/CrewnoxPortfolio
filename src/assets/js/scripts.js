@@ -108,11 +108,12 @@ $(".services-mp .serv-title .tab-title").on("mouseenter", function () {
 });
 
 $(function () {
-  var width = $(window).width();
-  if (width > 991) {
-    ("use strict");
+  function initScrollTriggers() {
+    var width = $(window).width();
 
-    $(function () {
+    if (width > 991) {
+      ("use strict");
+
       let cards = gsap.utils.toArray(".cards .card-item");
 
       let stickDistance = 0;
@@ -146,9 +147,21 @@ $(function () {
           toggleActions: "restart none none reverse",
         });
       });
-    });
+
+      ScrollTrigger.refresh();
+    } else {
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    }
   }
+
+  initScrollTriggers();
+
+  $(window).on("resize", function () {
+    initScrollTriggers();
+    ScrollTrigger.refresh();
+  });
 });
+
 $(window).on("load", function () {
   $(".gallery").isotope({
     itemSelector: ".items",

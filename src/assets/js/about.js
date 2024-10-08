@@ -1,7 +1,6 @@
 window.addEventListener('scroll', function() {
     const videoElement = document.querySelector('.bg-video');
     if (window.scrollY > 1000) {
-        console.log("worked     ")
       videoElement.style.display = 'none'; // Or remove a specific style as needed
     } else {
       videoElement.style.display = 'block'; // Restore the style when scrolled back up
