@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="assets/css/home2-style.css" />
   </head>
 
-  <body>
+  <body id="body">
     <!-- ==================== Start Loading ==================== -->
 
     <div class="loader-wrap">
@@ -88,10 +88,10 @@
 
     <!-- ==================== Start Navbar ==================== -->
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" >
       <div class="container">
         <!-- Logo -->
-        <a class="logo" href="#">
+        <a class="logo scroll" href="#body">
           <img src="assets/imgs/CNOX.svg" alt="logo" />
         </a>
 
@@ -99,30 +99,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link scroll active" href="#body">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../inner_pages/portfolio-cards.html"
-                >Portfolio</a
-              >
+              <a class="nav-link scroll" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../inner_pages/service-details.html"
-                >Services</a
-              >
+              <a class="nav-link scroll" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../inner_pages/about.html">About Us</a>
+              <a class="nav-link scroll" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../inner_pages/blog-grid.html">Blogs</a>
+              <a class="nav-link scroll" href="#blogs">Blogs</a>
             </li>
           </ul>
         </div>
-        <div class="topnav d-flex align-items-center">
-          <a href="../inner_pages/contact.html" class="butn butn-rounded">
+        <div class="topnav d-flex align-items-center ">
+          <a href="#contact" class="butn butn-rounded scroll">
             <div class="d-flex align-items-center">
-              <span>Let's Discuss Your Project</span>
+              <span >Let's Discuss Your Project</span>
               <span class="icon ml-10">
                 <img src="../common/imgs/icons/arrow-top-right.svg" alt="" />
               </span>
@@ -345,13 +341,18 @@
                   <div class="col-lg-5 d-flex align-items-end social-div">
                     <div class="social-icon">
                       <a href="#0">
-                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class=""
+                          ><img
+                            src="../src/assets/imgs/icon/facebook-icon.png"
+                            alt="fa-facebook-f"
+                            style="width: 23px; margin-bottom: 2px"
+                        /></i>
                       </a>
                       <a href="#0">
                         <i class="fa-brands fa-instagram"></i>
                       </a>
                       <a href="#0">
-                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                       </a>
                     </div>
                   </div>
@@ -483,7 +484,7 @@
           <div class="main-section-container" style="background-color: black">
             <!-- ==================== Work Standard ==================== -->
 
-            <header class="work-hed">
+            <header class="work-hed" id="portfolio">
               <div class="container section-padding">
                 <div class="caption text-center">
                   <h1>Work Standard</h1>
@@ -969,7 +970,11 @@
                 </div>
               </div>
             </div>
-            <section class="services-cst pt-30" style="background-color: #000">
+            <section
+              class="services-cst pt-30"
+              id="services"
+              style="background-color: #000"
+            >
               <div class="container-fluid">
                 <div class="light-bg radius-30" style="background-color: white">
                   <div class="container">
@@ -1407,7 +1412,7 @@
             </div>
           </section>
           <!-- ============ About and Service  Starts =========== -->
-          <section class="services-sa section-padding">
+          <section class="services-sa section-padding" id="blogs">
             <div class="container">
               <div class="sec-head mb-100">
                 <div class="row">
@@ -1744,7 +1749,7 @@
           </div>
           <!-- Brands Section Finish -->
           <!-- Contact Us page -->
-          <section class="contact-us">
+          <section class="contact-us" id="contact">
             <div class="contact-sa pt-0">
               <div class="container">
                 <div class="box">
@@ -2050,6 +2055,7 @@
     <script src="../common/js/gsap_lib/gsap.min.js"></script>
     <script src="../common/js/gsap_lib/ScrollSmoother.min.js"></script>
     <script src="../common/js/gsap_lib/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script src="../common/js/gsap_lib/SplitText.min.js"></script>
     <script src="../common/js/gsap_lib/matter.js"></script>
     <script src="../common/js/gsap_lib/throwable.js"></script>

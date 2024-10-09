@@ -10,18 +10,19 @@
   top: 0;
   z-index: -1;
 }
-@media screen and (max-width : 786px) {
-  #background-video{
+@media screen and (max-width: 786px) {
+  #background-video {
     object-position: center center;
   }
 }
+
 // @media screen and (max-width : 991px) {
 //   #background-video{
 //     object-position: center center;
 //   }
 // }
 .header-ds {
-    margin-top: 30px;
+  margin-top: 30px;
   // background-image: url(../imgs/header-bg.png);
   // background-size: cover;
   // background-position: bottom;

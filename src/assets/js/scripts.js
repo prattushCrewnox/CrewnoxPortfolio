@@ -167,3 +167,27 @@ $(window).on("load", function () {
     itemSelector: ".items",
   });
 });
+
+//Cta for Navbar
+
+
+const navLinks = document.querySelectorAll(".scroll");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    // alert("click")
+    e.preventDefault(); 
+
+    const target = this.getAttribute("href");
+    console.log(target)
+    
+    gsap.to(window, {
+      delay : 0.1,
+      duration: .3, 
+      scrollTo: {
+        y: target,
+        offsetY: 50, 
+      },
+    });
+  });
+});
