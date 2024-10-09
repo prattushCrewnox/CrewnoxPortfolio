@@ -65,7 +65,7 @@
 
         span {
           padding: 7px 12px;
-          background: #d0ff71;
+          background:#007fff;
           border-radius: 30px;
           position: absolute;
           font-size: 14px;
@@ -89,15 +89,21 @@
           &:nth-of-type(3) {
             bottom: 0;
             right: 15%;
-            transform: translateY(50%);
+            transform: translateY(50%) translateX(60%);
+           
             transition-delay: 0.4s;
           }
 
           &:nth-of-type(4) {
-            top: 50%;
+            top: 20%;
             right: 0;
             transform: translateY(-50%) translateX(50%);
             transition-delay: 0.5s;
+          }
+          &:nth-of-type(5) {
+            bottom:0;
+            left: 15%;
+            transform: translateY(55%);
           }
         }
       }
