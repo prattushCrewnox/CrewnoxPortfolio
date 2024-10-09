@@ -169,6 +169,7 @@ $(window).on("load", function () {
   });
 });
 
+
 //Cta for Navbar
 
 const navLinks = document.querySelectorAll(".scroll");
@@ -192,18 +193,17 @@ navLinks.forEach((link) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const colors = ["#007fff", "#c497fe"];
-  const spans = document.querySelectorAll(".list span");
-
-  spans.forEach((span) => {
+document.addEventListener("DOMContentLoaded", function() {
+  const colors = ['#007FFF', '#C497FE'];
+  const spans = document.querySelectorAll('.list span');
+  spans.forEach(span => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     span.style.backgroundColor = randomColor;
-
-    if (randomColor === "#007fff") {
-      span.style.color = "#ffffff";
+    if (randomColor === '#007FFF') {
+      span.style.color = '#FFFFFF';
     } else {
-      span.style.color = "#0e0f11";
+      span.style.color = '#0E0F11';
     }
   });
 });
+

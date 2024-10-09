@@ -62,9 +62,16 @@
 $color1: #007fff;
 $color2: #d0ff71;
 
-@mixin random-background {
-  background-color: if(random(2) == 1, $color1, $color2);
-}
+
+        span {
+          padding: 7px 12px;
+          background:#007fff;
+          border-radius: 30px;
+          position: absolute;
+          font-size: 14px;
+          color: #0e0f11;
+          opacity: 0;
+          transition: all 0.4s;
 
 .list {
   opacity: 0;
@@ -79,8 +86,6 @@ $color2: #d0ff71;
     opacity: 0;
     transition: all 0.4s;
 
-    // Apply the random background color to each span
-    @include random-background;
 
     &:nth-of-type(1) {
       top: 0;
@@ -94,23 +99,27 @@ $color2: #d0ff71;
       transform: translateY(-50%) translateX(-50%);
       transition-delay: 0.2s;
     }
+          &:nth-of-type(3) {
+            bottom: 0;
+            right: 15%;
+            transform: translateY(50%) translateX(60%);
+           
+            transition-delay: 0.4s;
+          }
 
-    &:nth-of-type(3) {
-      bottom: 0;
-      right: 15%;
-      transform: translateY(50%);
-      transition-delay: 0.4s;
-    }
-
-    &:nth-of-type(4) {
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%) translateX(50%);
-      transition-delay: 0.5s;
-    }
-  }
-}
-
+          &:nth-of-type(4) {
+            top: 20%;
+            right: 0;
+            transform: translateY(-50%) translateX(50%);
+            transition-delay: 0.5s;
+          }
+          &:nth-of-type(5) {
+            bottom:0;
+            left: 15%;
+            transform: translateY(55%);
+          }
+        }
+      }
     }
 
     p {
