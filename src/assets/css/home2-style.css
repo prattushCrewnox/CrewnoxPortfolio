@@ -52,6 +52,11 @@
   margin-right: 15px;
 }
 
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .section-padding-half {
   padding-top: 60px;
 }
@@ -435,13 +440,13 @@
 }
 .services-cst .item .title .list span {
   padding: 7px 12px;
-  background: #d0ff71;
   border-radius: 30px;
   position: absolute;
   font-size: 14px;
   color: #0e0f11;
   opacity: 0;
   transition: all 0.4s;
+  background-color: #007fff;
 }
 .services-cst .item .title .list span:nth-of-type(1) {
   top: 0;

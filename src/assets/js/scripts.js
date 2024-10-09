@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 $(function () {
   "use strict";
 
@@ -170,24 +171,39 @@ $(window).on("load", function () {
 
 //Cta for Navbar
 
-
 const navLinks = document.querySelectorAll(".scroll");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
     // alert("click")
-    e.preventDefault(); 
+    e.preventDefault();
 
     const target = this.getAttribute("href");
-    console.log(target)
-    
+    // console.log(target);
+
     gsap.to(window, {
-      delay : 0.1,
-      duration: .3, 
+      delay: 0.1,
+      duration: 0.3,
       scrollTo: {
         y: target,
-        offsetY: 50, 
+        offsetY: 25,
       },
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const colors = ["#007fff", "#c497fe"];
+  const spans = document.querySelectorAll(".list span");
+
+  spans.forEach((span) => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    span.style.backgroundColor = randomColor;
+
+    if (randomColor === "#007fff") {
+      span.style.color = "#ffffff";
+    } else {
+      span.style.color = "#0e0f11";
+    }
   });
 });
