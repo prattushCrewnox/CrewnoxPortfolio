@@ -52,6 +52,11 @@
   margin-right: 15px;
 }
 
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .section-padding-half {
   padding-top: 60px;
 }
@@ -196,6 +201,7 @@
 .marq-mp .marquee2 .item h5 {
   color: #000;
   font-weight: 400;
+
   text-transform: capitalize;
   white-space: nowrap;
 }
@@ -435,6 +441,7 @@
 }
 .services-cst .item .title .list span {
   padding: 7px 12px;
+
   background: #007fff;
   border-radius: 30px;
   position: absolute;
@@ -442,6 +449,7 @@
   color: #0e0f11;
   opacity: 0;
   transition: all 0.4s;
+  background-color: #007fff;
 }
 .services-cst .item .title .list span:nth-of-type(1) {
   top: 0;

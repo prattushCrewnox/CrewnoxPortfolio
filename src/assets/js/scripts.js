@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 $(function () {
   "use strict";
 
@@ -167,6 +168,31 @@ $(window).on("load", function () {
     itemSelector: ".items",
   });
 });
+
+
+//Cta for Navbar
+
+const navLinks = document.querySelectorAll(".scroll");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    // alert("click")
+    e.preventDefault();
+
+    const target = this.getAttribute("href");
+    // console.log(target);
+
+    gsap.to(window, {
+      delay: 0.1,
+      duration: 0.3,
+      scrollTo: {
+        y: target,
+        offsetY: 25,
+      },
+    });
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const colors = ['#007FFF', '#C497FE'];
   const spans = document.querySelectorAll('.list span');
@@ -180,3 +206,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
