@@ -585,13 +585,13 @@ p {
   line-height: 65px;
   letter-spacing: -2px;
   font-weight: 400;
-  text-shadow: #c497fe 2.5px -2px 1px, 0 0 30px #4b0082, 0 0 30px #4b0082;
+  text-shadow: #c497fe 2.5px -2px 1.5px, 0 0 30px #4b0082, 0 0 30px #4b0082;
 }
 .sec-head h2 span {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 400;
-  text-shadow: #c497fe 1px -1px 1px, 0 0 30px #4b0082, 0 0 30px #4b0082;
+  text-shadow: #c497fe 1.5px -1px 1.5px, 0 0 30px #4b0082, 0 0 30px #4b0082;
 }
 
 @media screen and (max-width: 992px) {
