@@ -174,7 +174,7 @@
 .marq-mp .item h5 {
   color: #ffffff;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -196,7 +196,7 @@
 .marq-mp .marquee2 .item h5 {
   color: #000;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -435,7 +435,7 @@
 }
 .services-cst .item .title .list span {
   padding: 7px 12px;
-  background: #007fff;
+  background: #d0ff71;
   border-radius: 30px;
   position: absolute;
   font-size: 14px;
@@ -457,19 +457,14 @@
 .services-cst .item .title .list span:nth-of-type(3) {
   bottom: 0;
   right: 15%;
-  transform: translateY(50%) translateX(60%);
+  transform: translateY(50%);
   transition-delay: 0.4s;
 }
 .services-cst .item .title .list span:nth-of-type(4) {
-  top: 20%;
+  top: 50%;
   right: 0;
   transform: translateY(-50%) translateX(50%);
   transition-delay: 0.5s;
-}
-.services-cst .item .title .list span:nth-of-type(5) {
-  bottom: 0;
-  left: 15%;
-  transform: translateY(55%);
 }
 .services-cst .item p {
   opacity: 0;

@@ -167,3 +167,16 @@ $(window).on("load", function () {
     itemSelector: ".items",
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const colors = ['#007FFF', '#C497FE'];
+  const spans = document.querySelectorAll('.list span');
+  spans.forEach(span => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    span.style.backgroundColor = randomColor;
+    if (randomColor === '#007FFF') {
+      span.style.color = '#FFFFFF';
+    } else {
+      span.style.color = '#0E0F11';
+    }
+  });
+});
