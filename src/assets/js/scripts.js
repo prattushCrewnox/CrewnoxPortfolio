@@ -188,7 +188,7 @@ menu.forEach((link) => {
           duration: 0.5,
           scrollTo: {
             y: target,
-            offsetY: 25, 
+            offsetY: 40, 
           },
           delay: 0.7,
         });
