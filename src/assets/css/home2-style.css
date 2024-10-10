@@ -52,6 +52,11 @@
   margin-right: 15px;
 }
 
+@media (min-width: 992px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .section-padding-half {
   padding-top: 60px;
 }
@@ -341,6 +346,9 @@
 .work-card {
   background-color: #151515;
 }
+.work-card .moto span {
+  display: inline;
+}
 .work-card .card-item {
   margin-bottom: 30px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -435,7 +443,6 @@
 }
 .services-cst .item .title .list span {
   padding: 7px 12px;
-  background: #007fff;
   border-radius: 30px;
   position: absolute;
   font-size: 14px;
@@ -555,9 +562,11 @@
   font-size: 14px;
 }
 
-.sub-head {
+.our-services .sub-head {
   font-size: 20px;
   line-height: 28px;
+  font-family: intern, sans-serif;
+  font-weight: lighter;
 }
 
 .sub-color {
@@ -576,11 +585,13 @@ p {
   line-height: 65px;
   letter-spacing: -2px;
   font-weight: 400;
+  text-shadow: #c497fe 2.5px -2px 1.5px, 0 0 30px #4b0082, 0 0 30px #4b0082;
 }
 .sec-head h2 span {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 400;
+  text-shadow: #c497fe 1.5px -1px 1.5px, 0 0 30px #4b0082, 0 0 30px #4b0082;
 }
 
 @media screen and (max-width: 992px) {
