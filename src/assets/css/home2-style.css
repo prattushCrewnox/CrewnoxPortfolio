@@ -1243,7 +1243,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  height: 80%;
 }
 .contact-us .contact-sa .contact-form label {
   font-size: 14px;
