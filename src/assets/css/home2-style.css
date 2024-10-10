@@ -963,8 +963,9 @@ p {
   z-index: 5;
 }
 .testimonials-mp .gray {
-  background: #eeeeee;
+  background: #007fff;
   transform: rotate(-7deg);
+  color: #fff;
 }
 .testimonials-mp .colorful {
   background: #c497fe;
