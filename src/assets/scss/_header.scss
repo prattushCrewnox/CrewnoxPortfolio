@@ -87,10 +87,9 @@
     }
   }
 }
+@media screen and (max-width : 375px){
+  .navbar .topnav .butn {
+    display: none;
+  }
 
-// @media screen and (max-width: 952px) {
-//     .social-div{
-//         display: flex;
-//         justify-content: center;
-//     }
-//   }
+}

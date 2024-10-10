@@ -159,6 +159,11 @@
     width: 800px;
   }
 }
+@media screen and (max-width: 375px) {
+  .navbar .topnav .butn {
+    display: none;
+  }
+}
 :root {
   --theme-color: 121212;
 }
