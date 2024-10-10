@@ -45,7 +45,7 @@
     }
 
     .topnav{
-
+        padding-right: 20px;
         .butn{
             padding: 7px 20px;
             background: #fff;
@@ -55,7 +55,28 @@
     }
 }
 
+@media(max-width : 992px) {
+    .topnav{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        .content{
+            font-size: 10px;
+        }
+    }
+    .hamenu .menu-links .main-menu > li .link {
+        font-size: 44px;
+    }
+    
+}
+@media screen and (max-width : 786px) {
+
+    .hamenu .menu-links .main-menu > li .link {
+        font-size: 28px;
+    }
+}
 @media(min-width : 992px) {
+ 
     .menu-toggle{
         display: none;
     }

@@ -169,6 +169,34 @@ $(window).on("load", function () {
   });
 });
 
+//Cta for Menu
+
+const menu = document.querySelectorAll(".slide");
+
+menu.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault(); 
+
+    const target = this.getAttribute("href");
+    console.log("Href value: ", target); 
+
+    if (target) {
+      $(".hamenu").removeClass("open").delay(300).animate({ left: "-100%" });
+      
+      setTimeout(() => {
+        gsap.to(window, {
+          duration: 0.5,
+          scrollTo: {
+            y: target,
+            offsetY: 25, 
+          },
+          delay: 0.7,
+        });
+      }, 400);
+    }
+  });
+});
+
 
 //Cta for Navbar
 
@@ -180,7 +208,7 @@ navLinks.forEach((link) => {
     e.preventDefault();
 
     const target = this.getAttribute("href");
-    // console.log(target);
+    console.log(target);
 
     gsap.to(window, {
       delay: 0.1,
@@ -193,17 +221,16 @@ navLinks.forEach((link) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const colors = ['#007FFF', '#C497FE'];
-  const spans = document.querySelectorAll('.list span');
-  spans.forEach(span => {
+document.addEventListener("DOMContentLoaded", function () {
+  const colors = ["#007FFF", "#C497FE"];
+  const spans = document.querySelectorAll(".list span");
+  spans.forEach((span) => {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     span.style.backgroundColor = randomColor;
-    if (randomColor === '#007FFF') {
-      span.style.color = '#FFFFFF';
+    if (randomColor === "#007FFF") {
+      span.style.color = "#FFFFFF";
     } else {
-      span.style.color = '#0E0F11';
+      span.style.color = "#0E0F11";
     }
   });
 });
-

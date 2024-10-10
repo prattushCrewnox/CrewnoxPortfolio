@@ -45,6 +45,9 @@
 .navbar .navbar-nav .nav-link.active {
   background: rgba(255, 255, 255, 0.1);
 }
+.navbar .topnav {
+  padding-right: 20px;
+}
 .navbar .topnav .butn {
   padding: 7px 20px;
   background: #fff;
@@ -52,6 +55,24 @@
   margin-right: 15px;
 }
 
+@media (max-width: 992px) {
+  .topnav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .topnav .content {
+    font-size: 10px;
+  }
+  .hamenu .menu-links .main-menu > li .link {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .hamenu .menu-links .main-menu > li .link {
+    font-size: 28px;
+  }
+}
 @media (min-width: 992px) {
   .menu-toggle {
     display: none;
@@ -974,8 +995,9 @@ p {
   z-index: 5;
 }
 .testimonials-mp .gray {
-  background: #eeeeee;
+  background: #007fff;
   transform: rotate(-7deg);
+  color: #fff;
 }
 .testimonials-mp .colorful {
   background: #c497fe;
