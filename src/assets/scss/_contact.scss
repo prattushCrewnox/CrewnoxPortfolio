@@ -18,6 +18,11 @@
       flex-direction: column;
       justify-content: space-between;
       height: 80%;
+      .sec-head{
+        h4{
+          font-size: 36px;
+        }
+      }
     }
 
     .contact-form {
@@ -49,3 +54,35 @@
     }
   }
 }
+@media (max-width:375px) {
+  .contact-us{
+    .contact-sa{
+      .box{
+        padding: 120px 30px;
+      }
+      .info{
+        .sec-head{
+          h4{
+            font-size: 32px;
+          }
+        }
+      }
+    }
+  }
+  }
+  
+  @media (max-width:320px) {
+    .contact-us{
+      .contact-sa{
+        .info{
+          .sec-head{
+            h4{
+              font-size: 31px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+    

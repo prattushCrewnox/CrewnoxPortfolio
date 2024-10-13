@@ -234,3 +234,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+//add active classes for nav 
+const navs = document.querySelectorAll('.nav-link');
+
+// Loop through each link and attach a click event listener
+navs.forEach(links => {
+  links.addEventListener('click', function() {
+    // Remove 'active' class from all links
+    navs.forEach(links => links.classList.remove('active'));
+
+    // Add 'active' class to the clicked link
+    this.classList.add('active');
+  });
+});

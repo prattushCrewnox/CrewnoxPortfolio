@@ -159,7 +159,7 @@
     width: 800px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 426px) {
   .navbar .topnav .butn {
     display: none;
   }
@@ -1272,6 +1272,9 @@ p {
   justify-content: space-between;
   height: 80%;
 }
+.contact-us .contact-sa .info .sec-head h4 {
+  font-size: 36px;
+}
 .contact-us .contact-sa .contact-form label {
   font-size: 14px;
   margin-bottom: 5px;
@@ -1295,6 +1298,19 @@ p {
   color: #fff;
 }
 
+@media (max-width: 375px) {
+  .contact-us .contact-sa .box {
+    padding: 120px 30px;
+  }
+  .contact-us .contact-sa .info .sec-head h4 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 320px) {
+  .contact-us .contact-sa .info .sec-head h4 {
+    font-size: 31px;
+  }
+}
 /* --------------- header --------------- */
 .header-crv {
   width: 100%;
